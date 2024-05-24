@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 'use client'
 
 import { Progress } from '@/components/ui/progress'
@@ -71,13 +72,12 @@ const Page = () => {
               className='h-full w-full flex-1 flex flex-col items-center justify-center'
               {...getRootProps()}>
               <input {...getInputProps()} />
-              {isDragOver ? (
-                <MousePointerSquareDashed className='h-6 w-6 text-zinc-500 mb-2' />
-              ) : isUploading || isPending ? (
-                <Loader2 className='animate-spin h-6 w-6 text-zinc-500 mb-2' />
-              ) : (
-                <Image className='h-6 w-6 text-zinc-500 mb-2' />
-              )}
+              {isDragOver
+                ? (<MousePointerSquareDashed className='h-6 w-6 text-zinc-500 mb-2' />)
+                : isUploading || isPending
+                  ? (<Loader2 className='animate-spin h-6 w-6 text-zinc-500 mb-2' />)
+                  : (<Image className='h-6 w-6 text-zinc-500 mb-2' />)
+              }
               <div className='flex flex-col justify-center mb-2 text-sm text-zinc-700'>
                 {isUploading ? (
                   <div className='flex flex-col items-center'>
