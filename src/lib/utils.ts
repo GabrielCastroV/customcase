@@ -42,6 +42,6 @@ export function constructMetadata({
       creator: '@avocadostoasted',
     },
     icons,
-    metadataBase: new URL("https://customcase-xi.vercel.app/")
+    metadataBase: new URL("https://customcase-weld.vercel.app/")
   }
 }
