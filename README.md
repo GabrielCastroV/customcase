@@ -83,7 +83,7 @@ Custom Case is an e-commerce platform developed with Next.js for selling persona
 
 1. **Register and Login**: Use Kinde for user authentication.
 2. **Customize Case**: Upload your photo, select iPhone model and case color.
-3. **Checkout**: Use Stripe for secure payment processing.
+3. **Checkout**: Use Stripe for secure payment processing. (Use 4242 4242 4242 4242 card number for buying in test-mode)
 4. **Order Confirmation**: Receive an email with order details.
 
 ## Contributing
