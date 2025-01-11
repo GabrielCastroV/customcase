@@ -90,7 +90,7 @@ function Review({ imgSrc, className, ...props }: ReviewProps) {
 
   const animationDelay =
     POSSIBLE_ANIMATION_DELAYS[
-      Math.floor(Math.random() * POSSIBLE_ANIMATION_DELAYS.length)
+    Math.floor(Math.random() * POSSIBLE_ANIMATION_DELAYS.length)
     ]
 
   return (
@@ -156,6 +156,7 @@ export function Reviews() {
     <MaxWidthWrapper className='relative max-w-5xl'>
       <img
         aria-hidden='true'
+        alt='Reviews'
         src='/what-people-are-buying.png'
         className='absolute select-none hidden xl:block -left-32 top-1/3'
       />
